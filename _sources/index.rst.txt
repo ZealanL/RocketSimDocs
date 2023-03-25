@@ -2,6 +2,9 @@
 RocketSim Documentation
 =====================================
 
+.. warning::
+   This documentation site is a work in progress. There are some issues and missing features.
+   
 Index
 ---------------
 .. toctree::
