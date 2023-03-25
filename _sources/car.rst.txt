@@ -1,0 +1,11 @@
+=====================================
+Car and CarState
+=====================================
+
+The Car class is fairly intuitive, and contains both the physics data and CarState of a given Car.
+
+.. doxygenclass:: Car
+	:members:
+	
+.. doxygenstruct:: CarState
+	:members:

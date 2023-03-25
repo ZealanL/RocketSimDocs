@@ -1,0 +1,232 @@
+
+	
+
+<!DOCTYPE html>
+<html class="writer-html5 dark" lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>RocketSim Documentation &mdash; RocketSim  documentation</title>
+	
+	
+	
+	<link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+	<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+	<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+	<link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+	<link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+
+	
+	
+	
+	
+
+	
+	<!--[if lt IE 9]>
+		<script src="_static/js/html5shiv.min.js"></script>
+	<![endif]-->
+	
+		
+			<script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+				<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+				<script src="_static/doctools.js"></script>
+				<script src="_static/sphinx_highlight.js"></script>
+		
+		<script type="text/javascript" src="_static/js/theme.js"></script>
+
+		
+		<link rel="index" title="Index" href="genindex.html" />
+		<link rel="search" title="Search" href="search.html" />
+		<link rel="next" title="Arena" href="arena.html" /> 
+</head>
+<body class="wy-body-for-nav">
+
+
+	 
+	<div class="wy-grid-for-nav">
+		
+		<nav data-toggle="wy-nav-shift" class="wy-nav-side">
+			<div class="wy-side-scroll">
+				<div class="wy-side-nav-search">
+					
+						<div class="brand">
+							<a href="#">
+							
+								RocketSim
+							
+							</a>
+						</div>
+						
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+					
+				</div>
+				
+				<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+					
+						
+						
+							
+						
+						
+							<ul>
+<li class="toctree-l1"><a class="reference internal" href="arena.html">Arena</a></li>
+<li class="toctree-l1"><a class="reference internal" href="car.html">Car and CarState</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ball.html">Ball and BallState</a></li>
+</ul>
+
+						
+					
+				</div>
+				
+			</div>
+		</nav>
+
+		<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+			
+			<nav class="wy-nav-top" aria-label="top navigation">
+			
+				<i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+				<a href="#">
+					
+						RocketSim
+					
+				</a>
+			
+			</nav>
+
+
+			<div class="wy-nav-content">
+				
+				<div class="rst-content">
+				
+					<div role="navigation" aria-label="breadcrumbs navigation">
+
+	<ul class="wy-breadcrumbs">
+		
+			
+				<li><a href="#">RocketSim</a> ⁄&nbsp;</li>
+				
+				<li><a href="">RocketSim Documentation</a></li>
+			
+		
+		
+			<li class="wy-breadcrumbs-aside">
+			
+			</li>
+		
+	</ul>
+
+</div>
+					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+					 <div itemprop="articleBody">
+						
+  <section id="rocketsim-documentation">
+<h1>RocketSim Documentation<a class="headerlink" href="#rocketsim-documentation" title="Permalink to this heading">¶</a></h1>
+<section id="index">
+<h2>Index<a class="headerlink" href="#index" title="Permalink to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="arena.html">Arena</a></li>
+<li class="toctree-l1"><a class="reference internal" href="car.html">Car and CarState</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ball.html">Ball and BallState</a></li>
+</ul>
+</div>
+</section>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading">¶</a></h2>
+<p>Here’s a basic example of creating an Arena, adding a Car, and simulating with custom inputs:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;./RocketSim/src/Sim/Arena/Arena.h&quot;</span>
+
+<span class="c1">// Make an arena instance (this is where our simulation takes place, has its own btDynamicsWorld instance)</span>
+<span class="n">Arena</span><span class="o">*</span><span class="w"> </span><span class="n">arena</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Arena</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">GameMode</span><span class="o">::</span><span class="n">SOCCAR</span><span class="p">);</span>
+
+<span class="c1">// Make a new car</span>
+<span class="c1">// NOTE: The ball and all cars are freed from memory when their arena is deconstructed, you don&#39;t need to do it yourself</span>
+<span class="n">Car</span><span class="o">*</span><span class="w"> </span><span class="n">car</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arena</span><span class="o">-&gt;</span><span class="n">AddCar</span><span class="p">(</span><span class="n">Team</span><span class="o">::</span><span class="n">BLUE</span><span class="p">);</span>
+
+<span class="c1">// Set up an initial state for our car</span>
+<span class="n">CarState</span><span class="w"> </span><span class="n">carState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+<span class="n">carState</span><span class="p">.</span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mf">0.f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.f</span><span class="p">,</span><span class="w"> </span><span class="mf">17.f</span><span class="w"> </span><span class="p">};</span>
+<span class="n">carState</span><span class="p">.</span><span class="n">vel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mf">50.f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.f</span><span class="w"> </span><span class="p">};</span>
+<span class="n">car</span><span class="o">-&gt;</span><span class="n">SetState</span><span class="p">(</span><span class="n">carState</span><span class="p">);</span>
+
+<span class="c1">// Setup a ball state</span>
+<span class="n">BallState</span><span class="w"> </span><span class="n">ballState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+<span class="n">ballState</span><span class="p">.</span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mf">0.f</span><span class="p">,</span><span class="w"> </span><span class="mf">400.f</span><span class="p">,</span><span class="w"> </span><span class="mf">100.f</span><span class="w"> </span><span class="p">};</span>
+<span class="n">arena</span><span class="o">-&gt;</span><span class="n">ball</span><span class="o">-&gt;</span><span class="n">SetState</span><span class="p">(</span><span class="n">ballState</span><span class="p">);</span>
+
+<span class="c1">// Make our car drive forward and turn</span>
+<span class="n">car</span><span class="o">-&gt;</span><span class="n">controls</span><span class="p">.</span><span class="n">throttle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="n">car</span><span class="o">-&gt;</span><span class="n">controls</span><span class="p">.</span><span class="n">steer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="c1">// Simulate for 100 ticks</span>
+<span class="n">arena</span><span class="o">-&gt;</span><span class="n">Step</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+<span class="c1">// Lets see where our car went!</span>
+<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;After &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">arena</span><span class="o">-&gt;</span><span class="n">tickCount</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;ticks, our car is at: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">car</span><span class="o">-&gt;</span><span class="n">GetState</span><span class="p">().</span><span class="n">pos</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+<span class="c1">// Destroy the arena once we are done</span>
+<span class="k">delete</span><span class="w"> </span><span class="n">arena</span><span class="p">;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+					 </div>
+					 
+					</div>
+					<footer>
+  
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2023, ZealanL
+	  <br>
+      
+      
+      
+      Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+      
+      <a href="https://github.com/revitron/revitron-sphinx-theme">theme</a>
+      
+      provided by <a href="https://github.com/revitron">Revitron</a>.
+
+    </p>
+  </div> 
+
+</footer>
+
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	
+
+	<script type="text/javascript">
+			jQuery(function () {
+					SphinxRtdTheme.Navigation.enable(true);
+			});
+	</script>
+
+	
+	
+		
+	 
+
+ 
+</body>	
+</html>

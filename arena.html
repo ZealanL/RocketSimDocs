@@ -1,0 +1,359 @@
+
+	
+
+<!DOCTYPE html>
+<html class="writer-html5 dark" lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>Arena &mdash; RocketSim  documentation</title>
+	
+	
+	
+	<link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+	<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+	<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+	<link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+	<link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+
+	
+	
+	
+	
+
+	
+	<!--[if lt IE 9]>
+		<script src="_static/js/html5shiv.min.js"></script>
+	<![endif]-->
+	
+		
+			<script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+				<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+				<script src="_static/doctools.js"></script>
+				<script src="_static/sphinx_highlight.js"></script>
+		
+		<script type="text/javascript" src="_static/js/theme.js"></script>
+
+		
+		<link rel="index" title="Index" href="genindex.html" />
+		<link rel="search" title="Search" href="search.html" /> 
+</head>
+<body class="wy-body-for-nav">
+
+
+	 
+	<div class="wy-grid-for-nav">
+		
+		<nav data-toggle="wy-nav-shift" class="wy-nav-side">
+			<div class="wy-side-scroll">
+				<div class="wy-side-nav-search">
+					
+						<div class="brand">
+							<a href="index.html">
+							
+								RocketSim
+							
+							</a>
+						</div>
+						
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+					
+				</div>
+				
+				<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+					
+						
+						
+							
+						
+						
+							<!-- Local TOC -->
+							<div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Arena</a></li>
+</ul>
+</div>
+						
+					
+				</div>
+				
+			</div>
+		</nav>
+
+		<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+			
+			<nav class="wy-nav-top" aria-label="top navigation">
+			
+				<i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+				<a href="index.html">
+					
+						RocketSim
+					
+				</a>
+			
+			</nav>
+
+
+			<div class="wy-nav-content">
+				
+				<div class="rst-content">
+				
+					<div role="navigation" aria-label="breadcrumbs navigation">
+
+	<ul class="wy-breadcrumbs">
+		
+			
+				<li><a href="index.html">RocketSim</a> ⁄&nbsp;</li>
+				
+				<li><a href="">Arena</a></li>
+			
+		
+		
+			<li class="wy-breadcrumbs-aside">
+			
+			</li>
+		
+	</ul>
+
+</div>
+					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+					 <div itemprop="articleBody">
+						
+  <section id="arena">
+<h1>Arena<a class="headerlink" href="#arena" title="Permalink to this heading">¶</a></h1>
+<p>The Arena class is the highest level class, which contains all Car instances, the Ball, and the arena collision geometry.</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv45Arena">
+<span id="_CPPv35Arena"></span><span id="_CPPv25Arena"></span><span id="Arena"></span><span class="target" id="class_arena"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Arena</span></span></span><a class="headerlink" href="#_CPPv45Arena" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The container for all game simulation Stores cars, the ball, all arena collisions, and manages the overall game state. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena11GetTickRateEv">
+<span id="_CPPv3N5Arena11GetTickRateEv"></span><span id="_CPPv2N5Arena11GetTickRateEv"></span><span id="Arena::GetTickRate"></span><span class="target" id="class_arena_1a05af39f7f594c0cc1acdd367028ee248"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetTickRate</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena11GetTickRateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Time in seconds each tick (1/tickrate) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena7GetCarsEv">
+<span id="_CPPv3N5Arena7GetCarsEv"></span><span id="_CPPv2N5Arena7GetCarsEv"></span><span id="Arena::GetCars"></span><span class="target" id="class_arena_1a19ae8bb5d39e43b39739bf9b3875ae90"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="car.html#_CPPv43Car" title="Car"><span class="n"><span class="pre">Car</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetCars</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena7GetCarsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena12GetBoostPadsEv">
+<span id="_CPPv3N5Arena12GetBoostPadsEv"></span><span id="_CPPv2N5Arena12GetBoostPadsEv"></span><span id="Arena::GetBoostPads"></span><span class="target" id="class_arena_1a4a33e4c4034240b2bc60973ee4e65988"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">BoostPad</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetBoostPads</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena12GetBoostPadsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena6AddCarE4TeamRK9CarConfig">
+<span id="_CPPv3N5Arena6AddCarE4TeamRK9CarConfig"></span><span id="_CPPv2N5Arena6AddCarE4TeamRK9CarConfig"></span><span id="Arena::AddCar__Team.CarConfigCR"></span><span class="target" id="class_arena_1a02e28d6448a727f93c2346137f02f225"></span><a class="reference internal" href="car.html#_CPPv43Car" title="Car"><span class="n"><span class="pre">Car</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">AddCar</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">Team</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">team</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">CarConfig</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">config</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">CAR_CONFIG_OCTANE</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena6AddCarE4TeamRK9CarConfig" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena9RemoveCarEP3Car">
+<span id="_CPPv3N5Arena9RemoveCarEP3Car"></span><span id="_CPPv2N5Arena9RemoveCarEP3Car"></span><span id="Arena::RemoveCar__CarP"></span><span class="target" id="class_arena_1af3a1842d8f5c08ba7f3f06499232aa9a"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RemoveCar</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="car.html#_CPPv43Car" title="Car"><span class="n"><span class="pre">Car</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">car</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena9RemoveCarEP3Car" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns false if the car was not found in the cars list NOTE: If the car was removed, the car will be freed and the pointer will be made invalid. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena12GetCarFromIDE8uint32_t">
+<span id="_CPPv3N5Arena12GetCarFromIDE8uint32_t"></span><span id="_CPPv2N5Arena12GetCarFromIDE8uint32_t"></span><span id="Arena::GetCarFromID__uint32_t"></span><span class="target" id="class_arena_1ae9d3b142d1696a2f987275539e5ef7b3"></span><a class="reference internal" href="car.html#_CPPv43Car" title="Car"><span class="n"><span class="pre">Car</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">GetCarFromID</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena12GetCarFromIDE8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena20SetGoalScoreCallbackE16GoalScoreEventFnPv">
+<span id="_CPPv3N5Arena20SetGoalScoreCallbackE16GoalScoreEventFnPv"></span><span id="_CPPv2N5Arena20SetGoalScoreCallbackE16GoalScoreEventFnPv"></span><span id="Arena::SetGoalScoreCallback__GoalScoreEventFn.voidP"></span><span class="target" id="class_arena_1a901688234cc8c86653bf30ce173abf7c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetGoalScoreCallback</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">GoalScoreEventFn</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">callbackFn</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">userInfo</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NULL</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena20SetGoalScoreCallbackE16GoalScoreEventFnPv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena11WriteToFileENSt10filesystem4pathE">
+<span id="_CPPv3N5Arena11WriteToFileENSt10filesystem4pathE"></span><span id="_CPPv2N5Arena11WriteToFileENSt10filesystem4pathE"></span><span id="Arena::WriteToFile__std::filesystem::path"></span><span class="target" id="class_arena_1a5f8326def1dfbb0f7eeca7106a5394f9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WriteToFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">filesystem</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">path</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">path</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena11WriteToFileENSt10filesystem4pathE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Serialize cars, ball, and boostpads to a file. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena5ArenaERK5Arena">
+<span id="_CPPv3N5Arena5ArenaERK5Arena"></span><span id="_CPPv2N5Arena5ArenaERK5Arena"></span><span id="Arena::Arena__ArenaCR"></span><span class="target" id="class_arena_1afce6e35e1470823539dc9194bef77499"></span><span class="sig-name descname"><span class="n"><span class="pre">Arena</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5Arena5ArenaERK5Arena" title="Arena::Arena"><span class="n"><span class="pre">Arena</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N5Arena5ArenaERK5Arena" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>No copy constructor, use <a class="reference internal" href="#class_arena_1a1a293fe70b4854d30cfeb817af054228"><span class="std std-ref">Arena::Clone()</span></a> instead. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5ArenaaSERK5Arena">
+<span id="_CPPv3N5ArenaaSERK5Arena"></span><span id="_CPPv2N5ArenaaSERK5Arena"></span><span id="Arena::assign-operator__ArenaCR"></span><span class="target" id="class_arena_1a61ff9b9b368f442b22f228b0c236afec"></span><a class="reference internal" href="#_CPPv45Arena" title="Arena"><span class="n"><span class="pre">Arena</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv45Arena" title="Arena"><span class="n"><span class="pre">Arena</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N5ArenaaSERK5Arena" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena5ArenaERR5Arena">
+<span id="_CPPv3N5Arena5ArenaERR5Arena"></span><span id="_CPPv2N5Arena5ArenaERR5Arena"></span><span id="Arena::Arena__ArenaRR"></span><span class="target" id="class_arena_1ac4eb68a41fc217ca91e3c8c99eef3209"></span><span class="sig-name descname"><span class="n"><span class="pre">Arena</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N5Arena5ArenaERR5Arena" title="Arena::Arena"><span class="n"><span class="pre">Arena</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N5Arena5ArenaERR5Arena" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>No move constructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5ArenaaSERR5Arena">
+<span id="_CPPv3N5ArenaaSERR5Arena"></span><span id="_CPPv2N5ArenaaSERR5Arena"></span><span id="Arena::assign-operator__ArenaRR"></span><span class="target" id="class_arena_1a0236aec311c9a1dcd2e9b7e666c488bd"></span><a class="reference internal" href="#_CPPv45Arena" title="Arena"><span class="n"><span class="pre">Arena</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv45Arena" title="Arena"><span class="n"><span class="pre">Arena</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N5ArenaaSERR5Arena" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena5CloneEb">
+<span id="_CPPv3N5Arena5CloneEb"></span><span id="_CPPv2N5Arena5CloneEb"></span><span id="Arena::Clone__b"></span><span class="target" id="class_arena_1a1a293fe70b4854d30cfeb817af054228"></span><a class="reference internal" href="#_CPPv45Arena" title="Arena"><span class="n"><span class="pre">Arena</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Clone</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">copyCallbacks</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena5CloneEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a deep copy of the arena. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena17DeserializeNewCarER12DataStreamIn4Team">
+<span id="_CPPv3N5Arena17DeserializeNewCarER12DataStreamIn4Team"></span><span id="_CPPv2N5Arena17DeserializeNewCarER12DataStreamIn4Team"></span><span id="Arena::DeserializeNewCar__DataStreamInR.Team"></span><span class="target" id="class_arena_1a46201933594c96b3cdae26ee641da512"></span><a class="reference internal" href="car.html#_CPPv43Car" title="Car"><span class="n"><span class="pre">Car</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">DeserializeNewCar</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DataStreamIn</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">in</span></span>, <span class="n"><span class="pre">Team</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">team</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena17DeserializeNewCarER12DataStreamIn4Team" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena4StepEi">
+<span id="_CPPv3N5Arena4StepEi"></span><span id="_CPPv2N5Arena4StepEi"></span><span id="Arena::Step__i"></span><span class="target" id="class_arena_1ac985e04ccf351afa79b8187cb4a83a4d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Step</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ticksToSimulate</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena4StepEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Simulate everything in the arena for a given number of ticks. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena20ResetToRandomKickoffEi">
+<span id="_CPPv3N5Arena20ResetToRandomKickoffEi"></span><span id="_CPPv2N5Arena20ResetToRandomKickoffEi"></span><span id="Arena::ResetToRandomKickoff__i"></span><span class="target" id="class_arena_1a9bca87c729daf6bd0c3f7d65f08a6ac2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ResetToRandomKickoff</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">seed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena20ResetToRandomKickoffEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5ArenaD0Ev">
+<span id="_CPPv3N5ArenaD0Ev"></span><span id="_CPPv2N5ArenaD0Ev"></span><span id="Arena::~Arena"></span><span class="target" id="class_arena_1ae21b399e9e3f6b8ac4ecc44d7d1667fc"></span><span class="sig-name descname"><span class="n"><span class="pre">~Arena</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5ArenaD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Free all associated memory. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena8gameModeE">
+<span id="_CPPv3N5Arena8gameModeE"></span><span id="_CPPv2N5Arena8gameModeE"></span><span id="Arena::gameMode__GameMode"></span><span class="target" id="class_arena_1a9068ad76986bb85b6b054ca10183e876"></span><span class="n"><span class="pre">GameMode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gameMode</span></span></span><a class="headerlink" href="#_CPPv4N5Arena8gameModeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena4ballE">
+<span id="_CPPv3N5Arena4ballE"></span><span id="_CPPv2N5Arena4ballE"></span><span id="Arena::ball__BallP"></span><span class="target" id="class_arena_1a92203e8dc8467055712c75a9dff4f941"></span><a class="reference internal" href="ball.html#_CPPv44Ball" title="Ball"><span class="n"><span class="pre">Ball</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">ball</span></span></span><a class="headerlink" href="#_CPPv4N5Arena4ballE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena8tickTimeE">
+<span id="_CPPv3N5Arena8tickTimeE"></span><span id="_CPPv2N5Arena8tickTimeE"></span><span id="Arena::tickTime__float"></span><span class="target" id="class_arena_1ab7b571cb5700fb00060a047c3adbe758"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tickTime</span></span></span><a class="headerlink" href="#_CPPv4N5Arena8tickTimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena9tickCountE">
+<span id="_CPPv3N5Arena9tickCountE"></span><span id="_CPPv2N5Arena9tickCountE"></span><span id="Arena::tickCount__uint64_t"></span><span class="target" id="class_arena_1ad708b5b47fa9d3d3fa81ee000db0097a"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tickCount</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5Arena9tickCountE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Total ticks this arena instance has been simulated for, never resets. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena15collisionConfigE">
+<span id="_CPPv3N5Arena15collisionConfigE"></span><span id="_CPPv2N5Arena15collisionConfigE"></span><span id="Arena::collisionConfig__btCollisionConfigurationP"></span><span class="target" id="class_arena_1a35973da5c4e781f38ce2566dcb24a5d6"></span><span class="n"><span class="pre">btCollisionConfiguration</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">collisionConfig</span></span></span><a class="headerlink" href="#_CPPv4N5Arena15collisionConfigE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena19collisionDispatcherE">
+<span id="_CPPv3N5Arena19collisionDispatcherE"></span><span id="_CPPv2N5Arena19collisionDispatcherE"></span><span id="Arena::collisionDispatcher__btCollisionDispatcherP"></span><span class="target" id="class_arena_1a51c859f67ee984817489f210344381f4"></span><span class="n"><span class="pre">btCollisionDispatcher</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">collisionDispatcher</span></span></span><a class="headerlink" href="#_CPPv4N5Arena19collisionDispatcherE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena20overlappingPairCacheE">
+<span id="_CPPv3N5Arena20overlappingPairCacheE"></span><span id="_CPPv2N5Arena20overlappingPairCacheE"></span><span id="Arena::overlappingPairCache__btDbvtBroadphaseP"></span><span class="target" id="class_arena_1afedcdb2c2a664a520822218eb47acce8"></span><span class="n"><span class="pre">btDbvtBroadphase</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">overlappingPairCache</span></span></span><a class="headerlink" href="#_CPPv4N5Arena20overlappingPairCacheE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena16constraintSolverE">
+<span id="_CPPv3N5Arena16constraintSolverE"></span><span id="_CPPv2N5Arena16constraintSolverE"></span><span id="Arena::constraintSolver__btConstraintSolverP"></span><span class="target" id="class_arena_1a4cbb31a8bf52b7baf01233c2849cab53"></span><span class="n"><span class="pre">btConstraintSolver</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">constraintSolver</span></span></span><a class="headerlink" href="#_CPPv4N5Arena16constraintSolverE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena4funcE">
+<span id="_CPPv3N5Arena4funcE"></span><span id="_CPPv2N5Arena4funcE"></span><span id="Arena::func__GoalScoreEventFn"></span><span class="target" id="class_arena_1a9476d40ec0ba352e20ea35cbe5fc0609"></span><span class="n"><span class="pre">GoalScoreEventFn</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">func</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NULL</span></span><a class="headerlink" href="#_CPPv4N5Arena4funcE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena8userInfoE">
+<span id="_CPPv3N5Arena8userInfoE"></span><span id="_CPPv2N5Arena8userInfoE"></span><span id="Arena::userInfo__voidP"></span><span class="target" id="class_arena_1a138353919902c80839190dcb4d856a96"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">userInfo</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NULL</span></span><a class="headerlink" href="#_CPPv4N5Arena8userInfoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena6CreateE8GameModef">
+<span id="_CPPv3N5Arena6CreateE8GameModef"></span><span id="_CPPv2N5Arena6CreateE8GameModef"></span><span id="Arena::Create__GameMode.float"></span><span class="target" id="class_arena_1a5bc8b6881002caf5877beabae41d274c"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv45Arena" title="Arena"><span class="n"><span class="pre">Arena</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Create</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">GameMode</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">gameMode</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">tickRate</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">120</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena6CreateE8GameModef" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>NOTE: <a class="reference internal" href="#class_arena"><span class="std std-ref">Arena</span></a> should be destroyed after use. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena12LoadFromFileENSt10filesystem4pathE">
+<span id="_CPPv3N5Arena12LoadFromFileENSt10filesystem4pathE"></span><span id="_CPPv2N5Arena12LoadFromFileENSt10filesystem4pathE"></span><span id="Arena::LoadFromFile__std::filesystem::path"></span><span class="target" id="class_arena_1a50ca22aa335e98e5fbd53238a72daba6"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv45Arena" title="Arena"><span class="n"><span class="pre">Arena</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">LoadFromFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">filesystem</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">path</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">path</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena12LoadFromFileENSt10filesystem4pathE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create a new arena from a file written by <a class="reference internal" href="#class_arena_1a5f8326def1dfbb0f7eeca7106a5394f9"><span class="std std-ref">Arena.WriteToFile()</span></a></p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Arena12SerializeCarER13DataStreamOutP3Car">
+<span id="_CPPv3N5Arena12SerializeCarER13DataStreamOutP3Car"></span><span id="_CPPv2N5Arena12SerializeCarER13DataStreamOutP3Car"></span><span id="Arena::SerializeCar__DataStreamOutR.CarP"></span><span class="target" id="class_arena_1aeac1def5e0d2e3d598be768110264270"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SerializeCar</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DataStreamOut</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">out</span></span>, <a class="reference internal" href="car.html#_CPPv43Car" title="Car"><span class="n"><span class="pre">Car</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">car</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Arena12SerializeCarER13DataStreamOutP3Car" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+					 </div>
+					 
+					</div>
+					<footer>
+  
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2023, ZealanL
+	  <br>
+      
+      
+      
+      Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+      
+      <a href="https://github.com/revitron/revitron-sphinx-theme">theme</a>
+      
+      provided by <a href="https://github.com/revitron">Revitron</a>.
+
+    </p>
+  </div> 
+
+</footer>
+
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	
+
+	<script type="text/javascript">
+			jQuery(function () {
+					SphinxRtdTheme.Navigation.enable(true);
+			});
+	</script>
+
+	
+	
+		
+	 
+
+ 
+</body>	
+</html>

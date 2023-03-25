@@ -1,0 +1,273 @@
+
+	
+
+<!DOCTYPE html>
+<html class="writer-html5 dark" lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>Ball and BallState &mdash; RocketSim  documentation</title>
+	
+	
+	
+	<link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+	<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+	<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+	<link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+	<link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+
+	
+	
+	
+	
+
+	
+	<!--[if lt IE 9]>
+		<script src="_static/js/html5shiv.min.js"></script>
+	<![endif]-->
+	
+		
+			<script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+				<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+				<script src="_static/doctools.js"></script>
+				<script src="_static/sphinx_highlight.js"></script>
+		
+		<script type="text/javascript" src="_static/js/theme.js"></script>
+
+		
+		<link rel="index" title="Index" href="genindex.html" />
+		<link rel="search" title="Search" href="search.html" /> 
+</head>
+<body class="wy-body-for-nav">
+
+
+	 
+	<div class="wy-grid-for-nav">
+		
+		<nav data-toggle="wy-nav-shift" class="wy-nav-side">
+			<div class="wy-side-scroll">
+				<div class="wy-side-nav-search">
+					
+						<div class="brand">
+							<a href="index.html">
+							
+								RocketSim
+							
+							</a>
+						</div>
+						
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+					
+				</div>
+				
+				<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+					
+						
+						
+							
+						
+						
+							<!-- Local TOC -->
+							<div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Ball and BallState</a></li>
+</ul>
+</div>
+						
+					
+				</div>
+				
+			</div>
+		</nav>
+
+		<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+			
+			<nav class="wy-nav-top" aria-label="top navigation">
+			
+				<i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+				<a href="index.html">
+					
+						RocketSim
+					
+				</a>
+			
+			</nav>
+
+
+			<div class="wy-nav-content">
+				
+				<div class="rst-content">
+				
+					<div role="navigation" aria-label="breadcrumbs navigation">
+
+	<ul class="wy-breadcrumbs">
+		
+			
+				<li><a href="index.html">RocketSim</a> ⁄&nbsp;</li>
+				
+				<li><a href="">Ball and BallState</a></li>
+			
+		
+		
+			<li class="wy-breadcrumbs-aside">
+			
+			</li>
+		
+	</ul>
+
+</div>
+					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+					 <div itemprop="articleBody">
+						
+  <section id="ball-and-ballstate">
+<h1>Ball and BallState<a class="headerlink" href="#ball-and-ballstate" title="Permalink to this heading">¶</a></h1>
+<p>The Ball class is fairly intuitive, and contains both the physics data and BallState of the ball.
+There is only one Ball instance in each Arena.</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv44Ball">
+<span id="_CPPv34Ball"></span><span id="_CPPv24Ball"></span><span id="Ball"></span><span class="target" id="class_ball"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Ball</span></span></span><a class="headerlink" href="#_CPPv44Ball" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Ball8GetStateEv">
+<span id="_CPPv3N4Ball8GetStateEv"></span><span id="_CPPv2N4Ball8GetStateEv"></span><span id="Ball::GetState"></span><span class="target" id="class_ball_1a1836b1d5536f636aaaa4a4ccd17b2f80"></span><a class="reference internal" href="#_CPPv49BallState" title="BallState"><span class="n"><span class="pre">BallState</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetState</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ball8GetStateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Ball8SetStateERK9BallState">
+<span id="_CPPv3N4Ball8SetStateERK9BallState"></span><span id="_CPPv2N4Ball8SetStateERK9BallState"></span><span id="Ball::SetState__BallStateCR"></span><span class="target" id="class_ball_1ac070e7052bf2b84ed6d03bebc2edff25"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetState</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv49BallState" title="BallState"><span class="n"><span class="pre">BallState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ball8SetStateERK9BallState" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Ball4BallERK4Ball">
+<span id="_CPPv3N4Ball4BallERK4Ball"></span><span id="_CPPv2N4Ball4BallERK4Ball"></span><span id="Ball::Ball__BallCR"></span><span class="target" id="class_ball_1a24e7c8795fd9ee0302f80fc0e16affac"></span><span class="sig-name descname"><span class="n"><span class="pre">Ball</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N4Ball4BallERK4Ball" title="Ball::Ball"><span class="n"><span class="pre">Ball</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N4Ball4BallERK4Ball" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>No copy/move constructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Ball4BallERR4Ball">
+<span id="_CPPv3N4Ball4BallERR4Ball"></span><span id="_CPPv2N4Ball4BallERR4Ball"></span><span id="Ball::Ball__BallRR"></span><span class="target" id="class_ball_1a36729bac4a192ba62499e8d10246fc34"></span><span class="sig-name descname"><span class="n"><span class="pre">Ball</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N4Ball4BallERR4Ball" title="Ball::Ball"><span class="n"><span class="pre">Ball</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N4Ball4BallERR4Ball" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Ball15GetRadiusBulletEv">
+<span id="_CPPv3N4Ball15GetRadiusBulletEv"></span><span id="_CPPv2N4Ball15GetRadiusBulletEv"></span><span id="Ball::GetRadiusBullet"></span><span class="target" id="class_ball_1a30d52f5dcad019320f07d067085a5f37"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetRadiusBullet</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ball15GetRadiusBulletEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Ball9GetRadiusEv">
+<span id="_CPPv3N4Ball9GetRadiusEv"></span><span id="_CPPv2N4Ball9GetRadiusEv"></span><span id="Ball::GetRadius"></span><span class="target" id="class_ball_1abc31b1347d291ce28f901909e9843280"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetRadius</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ball9GetRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4BallD0Ev">
+<span id="_CPPv3N4BallD0Ev"></span><span id="_CPPv2N4BallD0Ev"></span><span id="Ball::~Ball"></span><span class="target" id="class_ball_1a20f2f6ac0bf648f406a8e12e63429fcd"></span><span class="sig-name descname"><span class="n"><span class="pre">~Ball</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4BallD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv49BallState">
+<span id="_CPPv39BallState"></span><span id="_CPPv29BallState"></span><span id="BallState"></span><span class="target" id="struct_ball_state"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BallState</span></span></span><a class="headerlink" href="#_CPPv49BallState" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9BallState9SerializeER13DataStreamOut">
+<span id="_CPPv3N9BallState9SerializeER13DataStreamOut"></span><span id="_CPPv2N9BallState9SerializeER13DataStreamOut"></span><span id="BallState::Serialize__DataStreamOutR"></span><span class="target" id="struct_ball_state_1a2889e4aa6b86d2e37ee0cb0da74d9e0c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Serialize</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DataStreamOut</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">out</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9BallState9SerializeER13DataStreamOut" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9BallState11DeserializeER12DataStreamIn">
+<span id="_CPPv3N9BallState11DeserializeER12DataStreamIn"></span><span id="_CPPv2N9BallState11DeserializeER12DataStreamIn"></span><span id="BallState::Deserialize__DataStreamInR"></span><span class="target" id="struct_ball_state_1aebd80ae1f669926ce1e028294e6168b4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Deserialize</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DataStreamIn</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">in</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9BallState11DeserializeER12DataStreamIn" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9BallState3posE">
+<span id="_CPPv3N9BallState3posE"></span><span id="_CPPv2N9BallState3posE"></span><span id="BallState::pos__Vec"></span><span class="target" id="struct_ball_state_1a757cabfd0af5a0ae1da9fc17aa47c2f8"></span><span class="n"><span class="pre">Vec</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pos</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">RLConst</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BALL_REST_Z</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N9BallState3posE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Position in world space. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9BallState3velE">
+<span id="_CPPv3N9BallState3velE"></span><span id="_CPPv2N9BallState3velE"></span><span id="BallState::vel__Vec"></span><span class="target" id="struct_ball_state_1af06f4a2ea72a70bf6f2cc6d818681893"></span><span class="n"><span class="pre">Vec</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">vel</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N9BallState3velE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Linear velocity. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9BallState6angVelE">
+<span id="_CPPv3N9BallState6angVelE"></span><span id="_CPPv2N9BallState6angVelE"></span><span id="BallState::angVel__Vec"></span><span class="target" id="struct_ball_state_1ad694505b1cc5626dc7246ce079688f40"></span><span class="n"><span class="pre">Vec</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">angVel</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N9BallState6angVelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Angular velocity (axis-angle) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9BallState11ballHitInfoE">
+<span id="_CPPv3N9BallState11ballHitInfoE"></span><span id="_CPPv2N9BallState11ballHitInfoE"></span><span id="BallState::ballHitInfo__BallHitInfo"></span><span class="target" id="struct_ball_state_1aef459a286291b83fb100379be67b7a4e"></span><span class="n"><span class="pre">BallHitInfo</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ballHitInfo</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">BallHitInfo</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N9BallState11ballHitInfoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Information from the most recent car-ball hit Does ever not reset automatically. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+					 </div>
+					 
+					</div>
+					<footer>
+  
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2023, ZealanL
+	  <br>
+      
+      
+      
+      Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+      
+      <a href="https://github.com/revitron/revitron-sphinx-theme">theme</a>
+      
+      provided by <a href="https://github.com/revitron">Revitron</a>.
+
+    </p>
+  </div> 
+
+</footer>
+
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	
+
+	<script type="text/javascript">
+			jQuery(function () {
+					SphinxRtdTheme.Navigation.enable(true);
+			});
+	</script>
+
+	
+	
+		
+	 
+
+ 
+</body>	
+</html>

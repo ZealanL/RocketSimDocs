@@ -1,0 +1,12 @@
+=====================================
+Ball and BallState
+=====================================
+
+The Ball class is fairly intuitive, and contains both the physics data and BallState of the ball.
+There is only one Ball instance in each Arena.
+
+.. doxygenclass:: Ball
+	:members:
+	
+.. doxygenstruct:: BallState
+	:members:

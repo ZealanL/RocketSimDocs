@@ -1,0 +1,8 @@
+=====================================
+Arena
+=====================================
+
+The Arena class is the highest level class, which contains all Car instances, the Ball, and the arena collision geometry.
+
+.. doxygenclass:: Arena
+	:members:

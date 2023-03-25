@@ -1,0 +1,461 @@
+
+	
+
+<!DOCTYPE html>
+<html class="writer-html5 dark" lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>Car and CarState &mdash; RocketSim  documentation</title>
+	
+	
+	
+	<link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+	<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+	<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+	<link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+	<link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+
+	
+	
+	
+	
+
+	
+	<!--[if lt IE 9]>
+		<script src="_static/js/html5shiv.min.js"></script>
+	<![endif]-->
+	
+		
+			<script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+				<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+				<script src="_static/doctools.js"></script>
+				<script src="_static/sphinx_highlight.js"></script>
+		
+		<script type="text/javascript" src="_static/js/theme.js"></script>
+
+		
+		<link rel="index" title="Index" href="genindex.html" />
+		<link rel="search" title="Search" href="search.html" />
+		<link rel="next" title="Ball and BallState" href="ball.html" />
+		<link rel="prev" title="Arena" href="arena.html" /> 
+</head>
+<body class="wy-body-for-nav">
+
+
+	 
+	<div class="wy-grid-for-nav">
+		
+		<nav data-toggle="wy-nav-shift" class="wy-nav-side">
+			<div class="wy-side-scroll">
+				<div class="wy-side-nav-search">
+					
+						<div class="brand">
+							<a href="index.html">
+							
+								RocketSim
+							
+							</a>
+						</div>
+						
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+					
+				</div>
+				
+				<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+					
+						
+						
+							
+						
+						
+							<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="arena.html">Arena</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Car and CarState</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ball.html">Ball and BallState</a></li>
+</ul>
+
+						
+					
+				</div>
+				
+			</div>
+		</nav>
+
+		<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+			
+			<nav class="wy-nav-top" aria-label="top navigation">
+			
+				<i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+				<a href="index.html">
+					
+						RocketSim
+					
+				</a>
+			
+			</nav>
+
+
+			<div class="wy-nav-content">
+				
+				<div class="rst-content">
+				
+					<div role="navigation" aria-label="breadcrumbs navigation">
+
+	<ul class="wy-breadcrumbs">
+		
+			
+				<li><a href="index.html">RocketSim</a> ⁄&nbsp;</li>
+				
+				<li><a href="">Car and CarState</a></li>
+			
+		
+		
+			<li class="wy-breadcrumbs-aside">
+			
+			</li>
+		
+	</ul>
+
+</div>
+					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+					 <div itemprop="articleBody">
+						
+  <section id="car-and-carstate">
+<h1>Car and CarState<a class="headerlink" href="#car-and-carstate" title="Permalink to this heading">¶</a></h1>
+<p>The Car class is fairly intuitive, and contains both the physics data and CarState of a given Car.</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv43Car">
+<span id="_CPPv33Car"></span><span id="_CPPv23Car"></span><span id="Car"></span><span class="target" id="class_car"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Car</span></span></span><a class="headerlink" href="#_CPPv43Car" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3Car3CarERK3Car">
+<span id="_CPPv3N3Car3CarERK3Car"></span><span id="_CPPv2N3Car3CarERK3Car"></span><span id="Car::Car__CarCR"></span><span class="target" id="class_car_1ace853e57ac9853738eb3a6bfe3f18f30"></span><span class="sig-name descname"><span class="n"><span class="pre">Car</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3Car3CarERK3Car" title="Car::Car"><span class="n"><span class="pre">Car</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N3Car3CarERK3Car" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>No copy/move constructors. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3Car3CarERR3Car">
+<span id="_CPPv3N3Car3CarERR3Car"></span><span id="_CPPv2N3Car3CarERR3Car"></span><span id="Car::Car__CarRR"></span><span class="target" id="class_car_1aad8bfb0d59ece6e002e20bc623fead9a"></span><span class="sig-name descname"><span class="n"><span class="pre">Car</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N3Car3CarERR3Car" title="Car::Car"><span class="n"><span class="pre">Car</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N3Car3CarERR3Car" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3Car8GetStateEv">
+<span id="_CPPv3N3Car8GetStateEv"></span><span id="_CPPv2N3Car8GetStateEv"></span><span id="Car::GetState"></span><span class="target" id="class_car_1a0a5e26d42322a98488f836341a40692b"></span><a class="reference internal" href="#_CPPv48CarState" title="CarState"><span class="n"><span class="pre">CarState</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetState</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3Car8GetStateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Update our internal state from bullet and return it. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3Car8SetStateERK8CarState">
+<span id="_CPPv3N3Car8SetStateERK8CarState"></span><span id="_CPPv2N3Car8SetStateERK8CarState"></span><span id="Car::SetState__CarStateCR"></span><span class="target" id="class_car_1a37e2df0da35453ab1b317316815f367b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetState</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv48CarState" title="CarState"><span class="n"><span class="pre">CarState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3Car8SetStateERK8CarState" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Update our bullet stuff to this new state, replace our internal state with it. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3Car8DemolishEv">
+<span id="_CPPv3N3Car8DemolishEv"></span><span id="_CPPv2N3Car8DemolishEv"></span><span id="Car::Demolish"></span><span class="target" id="class_car_1abe0420a16c3990a30b9c708581472a9c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Demolish</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3Car8DemolishEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3Car7RespawnEi">
+<span id="_CPPv3N3Car7RespawnEi"></span><span id="_CPPv2N3Car7RespawnEi"></span><span id="Car::Respawn__i"></span><span class="target" id="class_car_1aed439c664cecd6cb8adce29e27a2df80"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Respawn</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">seed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3Car7RespawnEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3Car13GetForwardDirEv">
+<span id="_CPPv3NK3Car13GetForwardDirEv"></span><span id="_CPPv2NK3Car13GetForwardDirEv"></span><span id="Car::GetForwardDirC"></span><span class="target" id="class_car_1a3bc89c4956568ddbd8ae25cf48fc588a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">Vec</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetForwardDir</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3Car13GetForwardDirEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3Car11GetRightDirEv">
+<span id="_CPPv3NK3Car11GetRightDirEv"></span><span id="_CPPv2NK3Car11GetRightDirEv"></span><span id="Car::GetRightDirC"></span><span class="target" id="class_car_1a048d95bb92d3a7023572517057f5612a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">Vec</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetRightDir</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3Car11GetRightDirEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3Car8GetUpDirEv">
+<span id="_CPPv3NK3Car8GetUpDirEv"></span><span id="_CPPv2NK3Car8GetUpDirEv"></span><span id="Car::GetUpDirC"></span><span class="target" id="class_car_1a37a6c0901220f51d43aed2a69911e0cb"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">Vec</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetUpDir</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3Car8GetUpDirEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3CarD0Ev">
+<span id="_CPPv3N3CarD0Ev"></span><span id="_CPPv2N3CarD0Ev"></span><span id="Car::~Car"></span><span class="target" id="class_car_1a5933bb06e96b159fe339a128abda888a"></span><span class="sig-name descname"><span class="n"><span class="pre">~Car</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3CarD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3Car6configE">
+<span id="_CPPv3N3Car6configE"></span><span id="_CPPv2N3Car6configE"></span><span id="Car::config__CarConfig"></span><span class="target" id="class_car_1ae6e53c093126f3e7914e7e570049da65"></span><span class="n"><span class="pre">CarConfig</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">config</span></span></span><a class="headerlink" href="#_CPPv4N3Car6configE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3Car4teamE">
+<span id="_CPPv3N3Car4teamE"></span><span id="_CPPv2N3Car4teamE"></span><span id="Car::team__Team"></span><span class="target" id="class_car_1ab7f6827a9ede533022c5ee1537ada4c0"></span><span class="n"><span class="pre">Team</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">team</span></span></span><a class="headerlink" href="#_CPPv4N3Car4teamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3Car2idE">
+<span id="_CPPv3N3Car2idE"></span><span id="_CPPv2N3Car2idE"></span><span id="Car::id__uint32_t"></span><span class="target" id="class_car_1ae2de96016b1bd1e7d38433d400e75f4c"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">id</span></span></span><a class="headerlink" href="#_CPPv4N3Car2idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Each car is given a unique ID when created by the arena Will always be &gt;0 (unless you somehow reach integer overflow) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3Car8controlsE">
+<span id="_CPPv3N3Car8controlsE"></span><span id="_CPPv2N3Car8controlsE"></span><span id="Car::controls__CarControls"></span><span class="target" id="class_car_1a61eea6c911f73ce8fdf14f93a2a2d1da"></span><span class="n"><span class="pre">CarControls</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">controls</span></span></span><a class="headerlink" href="#_CPPv4N3Car8controlsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The controls to simulate the car with. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv48CarState">
+<span id="_CPPv38CarState"></span><span id="_CPPv28CarState"></span><span id="CarState"></span><span class="target" id="struct_car_state"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CarState</span></span></span><a class="headerlink" href="#_CPPv48CarState" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState9SerializeER13DataStreamOut">
+<span id="_CPPv3N8CarState9SerializeER13DataStreamOut"></span><span id="_CPPv2N8CarState9SerializeER13DataStreamOut"></span><span id="CarState::Serialize__DataStreamOutR"></span><span class="target" id="struct_car_state_1a73d5daf65441c8d5a58bf21b6130ee30"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Serialize</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DataStreamOut</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">out</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8CarState9SerializeER13DataStreamOut" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState11DeserializeER12DataStreamIn">
+<span id="_CPPv3N8CarState11DeserializeER12DataStreamIn"></span><span id="_CPPv2N8CarState11DeserializeER12DataStreamIn"></span><span id="CarState::Deserialize__DataStreamInR"></span><span class="target" id="struct_car_state_1a47ac518101b2d9726603a9064ad360d8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Deserialize</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DataStreamIn</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">in</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8CarState11DeserializeER12DataStreamIn" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState3posE">
+<span id="_CPPv3N8CarState3posE"></span><span id="_CPPv2N8CarState3posE"></span><span id="CarState::pos__Vec"></span><span class="target" id="struct_car_state_1a5c58ebdf60be39e6641f74956d04a2e5"></span><span class="n"><span class="pre">Vec</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pos</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">17</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N8CarState3posE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Position in world space (UU) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState6rotMatE">
+<span id="_CPPv3N8CarState6rotMatE"></span><span id="_CPPv2N8CarState6rotMatE"></span><span id="CarState::rotMat__RotMat"></span><span class="target" id="struct_car_state_1a113308941a86b40c8d89470b4dfec1e3"></span><span class="n"><span class="pre">RotMat</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rotMat</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">RotMat</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GetIdentity</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N8CarState6rotMatE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState3velE">
+<span id="_CPPv3N8CarState3velE"></span><span id="_CPPv2N8CarState3velE"></span><span id="CarState::vel__Vec"></span><span class="target" id="struct_car_state_1aa222799ea38ca18d68726c5e61165f6a"></span><span class="n"><span class="pre">Vec</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">vel</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N8CarState3velE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Linear velocity. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState6angVelE">
+<span id="_CPPv3N8CarState6angVelE"></span><span id="_CPPv2N8CarState6angVelE"></span><span id="CarState::angVel__Vec"></span><span class="target" id="struct_car_state_1a9551a45f01b7cd5c7179c0c95a4a20e9"></span><span class="n"><span class="pre">Vec</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">angVel</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N8CarState6angVelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Angular velocity (rad/s) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState10isOnGroundE">
+<span id="_CPPv3N8CarState10isOnGroundE"></span><span id="_CPPv2N8CarState10isOnGroundE"></span><span id="CarState::isOnGround__b"></span><span class="target" id="struct_car_state_1a0d0efee11d8835447a886686900b7695"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isOnGround</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N8CarState10isOnGroundE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState9hasJumpedE">
+<span id="_CPPv3N8CarState9hasJumpedE"></span><span id="_CPPv2N8CarState9hasJumpedE"></span><span id="CarState::hasJumped__b"></span><span class="target" id="struct_car_state_1a931cb447ec9e4c011feaf9d1bacc9639"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hasJumped</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N8CarState9hasJumpedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState15hasDoubleJumpedE">
+<span id="_CPPv3N8CarState15hasDoubleJumpedE"></span><span id="_CPPv2N8CarState15hasDoubleJumpedE"></span><span id="CarState::hasDoubleJumped__b"></span><span class="target" id="struct_car_state_1ac79d99467dc317a7920965d2095bc41b"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hasDoubleJumped</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N8CarState15hasDoubleJumpedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState10hasFlippedE">
+<span id="_CPPv3N8CarState10hasFlippedE"></span><span id="_CPPv2N8CarState10hasFlippedE"></span><span id="CarState::hasFlipped__b"></span><span class="target" id="struct_car_state_1aec2612fcb99d458f70eb6dc36c7c0b25"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hasFlipped</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N8CarState10hasFlippedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState18lastRelDodgeTorqueE">
+<span id="_CPPv3N8CarState18lastRelDodgeTorqueE"></span><span id="_CPPv2N8CarState18lastRelDodgeTorqueE"></span><span id="CarState::lastRelDodgeTorque__Vec"></span><span class="target" id="struct_car_state_1a294e9a5eac6e426ed4545967ea9b2d6e"></span><span class="n"><span class="pre">Vec</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lastRelDodgeTorque</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N8CarState18lastRelDodgeTorqueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState8jumpTimeE">
+<span id="_CPPv3N8CarState8jumpTimeE"></span><span id="_CPPv2N8CarState8jumpTimeE"></span><span id="CarState::jumpTime__float"></span><span class="target" id="struct_car_state_1ab26ed873d715235c1e897bcc1267925b"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">jumpTime</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8CarState8jumpTimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Active during the duration of a jump or flip. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState8flipTimeE">
+<span id="_CPPv3N8CarState8flipTimeE"></span><span id="_CPPv2N8CarState8flipTimeE"></span><span id="CarState::flipTime__float"></span><span class="target" id="struct_car_state_1a7ae118a9f0741d0a443095c104c28c74"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">flipTime</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8CarState8flipTimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState9isJumpingE">
+<span id="_CPPv3N8CarState9isJumpingE"></span><span id="_CPPv2N8CarState9isJumpingE"></span><span id="CarState::isJumping__b"></span><span class="target" id="struct_car_state_1a7f70c7b9201824db44a03a1acce4edd3"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isJumping</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N8CarState9isJumpingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>True during a jump (not double jumps or a flip) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState16airTimeSinceJumpE">
+<span id="_CPPv3N8CarState16airTimeSinceJumpE"></span><span id="_CPPv2N8CarState16airTimeSinceJumpE"></span><span id="CarState::airTimeSinceJump__float"></span><span class="target" id="struct_car_state_1a30800332081601e4c9e3f8664dbc3761"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">airTimeSinceJump</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8CarState16airTimeSinceJumpE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Time spent in the air once !isJumping. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState5boostE">
+<span id="_CPPv3N8CarState5boostE"></span><span id="_CPPv2N8CarState5boostE"></span><span id="CarState::boost__float"></span><span class="target" id="struct_car_state_1ae6ef9eb021d2f99ecf9c4f5fda338114"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">boost</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">RLConst</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BOOST_SPAWN_AMOUNT</span></span><a class="headerlink" href="#_CPPv4N8CarState5boostE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Goes from 0 to 100. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState17timeSpentBoostingE">
+<span id="_CPPv3N8CarState17timeSpentBoostingE"></span><span id="_CPPv2N8CarState17timeSpentBoostingE"></span><span id="CarState::timeSpentBoosting__float"></span><span class="target" id="struct_car_state_1a9484dc90bc4a075f9132356942cbdc80"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timeSpentBoosting</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8CarState17timeSpentBoostingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Added to replicate minimum boosting time NOTE: Will be used even when we have no boost. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState12isSupersonicE">
+<span id="_CPPv3N8CarState12isSupersonicE"></span><span id="_CPPv2N8CarState12isSupersonicE"></span><span id="CarState::isSupersonic__b"></span><span class="target" id="struct_car_state_1a3d16b80aa5e1d8fdf8060c88e0959992"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isSupersonic</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N8CarState12isSupersonicE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState14supersonicTimeE">
+<span id="_CPPv3N8CarState14supersonicTimeE"></span><span id="_CPPv2N8CarState14supersonicTimeE"></span><span id="CarState::supersonicTime__float"></span><span class="target" id="struct_car_state_1a4bca1f9b8bebe998b6e74e0e2ce0db11"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">supersonicTime</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8CarState14supersonicTimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Time spent supersonic, for checking with the supersonic maintain time (see RLConst.h) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState12handbrakeValE">
+<span id="_CPPv3N8CarState12handbrakeValE"></span><span id="_CPPv2N8CarState12handbrakeValE"></span><span id="CarState::handbrakeVal__float"></span><span class="target" id="struct_car_state_1a40811b1d5cb1b76fb62c276193037a1e"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">handbrakeVal</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8CarState12handbrakeValE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This is a state variable due to the rise/fall rate of handbrake inputs (see RLConst.h) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState14isAutoFlippingE">
+<span id="_CPPv3N8CarState14isAutoFlippingE"></span><span id="_CPPv2N8CarState14isAutoFlippingE"></span><span id="CarState::isAutoFlipping__b"></span><span class="target" id="struct_car_state_1a6f05492aec2667641bdda0b111d295f8"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isAutoFlipping</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N8CarState14isAutoFlippingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState13autoFlipTimerE">
+<span id="_CPPv3N8CarState13autoFlipTimerE"></span><span id="_CPPv2N8CarState13autoFlipTimerE"></span><span id="CarState::autoFlipTimer__float"></span><span class="target" id="struct_car_state_1ab653ac16bc9dd351b8c87fc75908eab5"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">autoFlipTimer</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8CarState13autoFlipTimerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState19autoFlipTorqueScaleE">
+<span id="_CPPv3N8CarState19autoFlipTorqueScaleE"></span><span id="_CPPv2N8CarState19autoFlipTorqueScaleE"></span><span id="CarState::autoFlipTorqueScale__float"></span><span class="target" id="struct_car_state_1ae3b1964f0a263454dd098a600cede6ab"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">autoFlipTorqueScale</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8CarState19autoFlipTorqueScaleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Counts down when auto-flipping. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState10hasContactE">
+<span id="_CPPv3N8CarState10hasContactE"></span><span id="_CPPv2N8CarState10hasContactE"></span><span id="CarState::hasContact__b"></span><span class="target" id="struct_car_state_1acc326402507f3027cff5e74457f5f575"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hasContact</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N8CarState10hasContactE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState13contactNormalE">
+<span id="_CPPv3N8CarState13contactNormalE"></span><span id="_CPPv2N8CarState13contactNormalE"></span><span id="CarState::contactNormal__Vec"></span><span class="target" id="struct_car_state_1a330784bb661b1a85fc3146ccef0f02a5"></span><span class="n"><span class="pre">Vec</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">contactNormal</span></span></span><a class="headerlink" href="#_CPPv4N8CarState13contactNormalE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState12worldContactE">
+<span id="_CPPv3N8CarState12worldContactE"></span><span id="_CPPv2N8CarState12worldContactE"></span><span class="target" id="struct_car_state_1ae46935b8afb6c1f22f71f3841f592f66"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv48CarState" title="CarState"><span class="n"><span class="pre">CarState</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">[anonymous]</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">worldContact</span></span></span><a class="headerlink" href="#_CPPv4N8CarState12worldContactE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState10otherCarIDE">
+<span id="_CPPv3N8CarState10otherCarIDE"></span><span id="_CPPv2N8CarState10otherCarIDE"></span><span id="CarState::otherCarID__uint32_t"></span><span class="target" id="struct_car_state_1a65d2d03dc0ceb1606ec75aa579a5a406"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">otherCarID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8CarState10otherCarIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState13cooldownTimerE">
+<span id="_CPPv3N8CarState13cooldownTimerE"></span><span id="_CPPv2N8CarState13cooldownTimerE"></span><span id="CarState::cooldownTimer__float"></span><span class="target" id="struct_car_state_1a7a801979896c6d9720e966ddabf71760"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cooldownTimer</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8CarState13cooldownTimerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState10carContactE">
+<span id="_CPPv3N8CarState10carContactE"></span><span id="_CPPv2N8CarState10carContactE"></span><span class="target" id="struct_car_state_1a1fb08ce1fbbc508a08c5983c536b6800"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv48CarState" title="CarState"><span class="n"><span class="pre">CarState</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">[anonymous]</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">carContact</span></span></span><a class="headerlink" href="#_CPPv4N8CarState10carContactE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState8isDemoedE">
+<span id="_CPPv3N8CarState8isDemoedE"></span><span id="_CPPv2N8CarState8isDemoedE"></span><span id="CarState::isDemoed__b"></span><span class="target" id="struct_car_state_1a761679374a58238aa87711be615e43b8"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isDemoed</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N8CarState8isDemoedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState16demoRespawnTimerE">
+<span id="_CPPv3N8CarState16demoRespawnTimerE"></span><span id="_CPPv2N8CarState16demoRespawnTimerE"></span><span id="CarState::demoRespawnTimer__float"></span><span class="target" id="struct_car_state_1a245c7ad805c1f52b4aefefc903efd6f9"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demoRespawnTimer</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8CarState16demoRespawnTimerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState15lastHitBallTickE">
+<span id="_CPPv3N8CarState15lastHitBallTickE"></span><span id="_CPPv2N8CarState15lastHitBallTickE"></span><span id="CarState::lastHitBallTick__uint64_t"></span><span class="target" id="struct_car_state_1ab04ccdf55971e71ccabae3909f84af3d"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lastHitBallTick</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">~</span></span><span class="m"><span class="pre">0ULL</span></span><a class="headerlink" href="#_CPPv4N8CarState15lastHitBallTickE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set to arena-&gt;tickCount when ball is hit Don’t change this unless you know what you’re doing. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8CarState12lastControlsE">
+<span id="_CPPv3N8CarState12lastControlsE"></span><span id="_CPPv2N8CarState12lastControlsE"></span><span id="CarState::lastControls__CarControls"></span><span class="target" id="struct_car_state_1a5e3e942837b1e4ac909977c1341e7097"></span><span class="n"><span class="pre">CarControls</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lastControls</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">CarControls</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N8CarState12lastControlsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Controls from last tick, set to this-&gt;controls after simulation. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+					 </div>
+					 
+					</div>
+					<footer>
+  
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2023, ZealanL
+	  <br>
+      
+      
+      
+      Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+      
+      <a href="https://github.com/revitron/revitron-sphinx-theme">theme</a>
+      
+      provided by <a href="https://github.com/revitron">Revitron</a>.
+
+    </p>
+  </div> 
+
+</footer>
+
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	
+
+	<script type="text/javascript">
+			jQuery(function () {
+					SphinxRtdTheme.Navigation.enable(true);
+			});
+	</script>
+
+	
+	
+		
+	 
+
+ 
+</body>	
+</html>
